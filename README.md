@@ -10,7 +10,8 @@ Installing the dependencies
   can find the source on his blog: http://blog.arpalert.org/2018/02/haproxy-lua-redis-connection-pool.html
 - Replace `r.release(conn)` with `r:release(conn)` in `redis-pool.lua`.
 - Install `lua-redis`. On Ubuntu Xenial I had to symlink the script manually
-  in the Lua 5.3 library path, it was installed for Lua 5.1 / 5.2 only.
+  in the Lua 5.3 library path, it was installed for Lua 5.1 / 5.2 only. Bug report
+  is here: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=898013
 
 Installing h-app-roxy
 ---------------------
